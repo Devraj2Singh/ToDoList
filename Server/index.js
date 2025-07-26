@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 dotenv.config()
 
-mongoose.connect("mongodb://127.0.0.1/ToDo", {
+mongoose.connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }
