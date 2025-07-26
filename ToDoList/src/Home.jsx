@@ -23,7 +23,7 @@ function Home() {
      }
 
     const handleDelete = (id) =>{
-        axios.delete(`${VITE_REACT_APP_BACKEND_BASEURL}/delete/` +id)
+        axios.delete(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/delete/` +id)
         .then(result => {
             location.reload()
         })
